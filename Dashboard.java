@@ -7,7 +7,9 @@ public class Dashboard extends JFrame {
     private JPanel DashPanel;
 
     public Dashboard() {
+         setTitle("Dashboard");
 
+        
         btnInvoice.addActionListener(e -> {
              new InvoiceGenerator().setVisible(true);
 
