@@ -15,7 +15,7 @@ public class Dashboard extends JFrame {
         setVisible(true);
 
         btnInvoice.addActionListener(e -> {
-            new InvoiceGenerator().setVisible(true);
+
         });
 
         btnLogout.addActionListener(e -> {
