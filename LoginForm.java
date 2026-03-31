@@ -5,7 +5,7 @@ public class LoginForm extends JFrame {
     JTextField txtUser;
     JPasswordField txtPass;
     JButton btnLogin;
-    JPanel txtPanel;
+    JPanel txtPanel
     JLabel sheet;
 
     public LoginForm() {
@@ -16,13 +16,11 @@ public class LoginForm extends JFrame {
     setContentPane(txtPanel);
     setVisible(true);
 
-
-        // Button action
         btnLogin.addActionListener(e -> {
             String user = txtUser.getText();
             String pass = new String(txtPass.getPassword());
 
-            if (user.equals("admin") && pass.equals("1234")) {
+            if (user.equals("admin") && pass.equals("12345")) {
                 JOptionPane.showMessageDialog(this, "Login Successful!");
                 new Dashboard().setVisible(true);
                 dispose();
