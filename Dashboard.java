@@ -8,7 +8,8 @@ public class Dashboard extends JFrame {
 
     public Dashboard() {
          setTitle("Dashboard");
-
+         setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         btnInvoice.addActionListener(e -> {
              new InvoiceGenerator().setVisible(true);
